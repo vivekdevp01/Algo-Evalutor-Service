@@ -4,7 +4,8 @@ import serverConfig from './serverConfig'
 const redisConfig={
     port:serverConfig.REDIS_PORT,
     host:serverConfig.REDIS_HOST,
-    maxRetriesPerRequest:null
+    maxRetriesPerRequest:null,
+    password:serverConfig.REDIS_PASSWORD
 };
 
 const redisConnection=new Redis(redisConfig);
